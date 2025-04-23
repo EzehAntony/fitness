@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fitness Coach Landing Page
+
+A modern, SEO-optimized landing page for fitness coaches built with Next.js and Tailwind CSS.
+
+## Features
+
+- 🎨 Modern and responsive design
+- 🔍 SEO optimized with proper metadata
+- 📱 Mobile-friendly layout
+- ⚡ Fast performance with Next.js
+- 🎯 Easy content management
+- 🎭 Beautiful animations and transitions
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Customizing Content
+
+All the content is managed through the `app/data/siteConfig.ts` file. Here's how to customize different sections:
+
+### Site Configuration
+
+```typescript
+export const siteConfig = {
+  name: "Your Site Name",
+  description: "Your site description",
+  url: "https://yoursite.com",
+  // ... other configurations
+};
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Coach Information
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```typescript
+coach: {
+  name: "Coach Name",
+  title: "Coach Title",
+  bio: "Coach biography",
+  image: "/images/coach.jpg",
+  certifications: [
+    "Certification 1",
+    "Certification 2",
+    // ... more certifications
+  ],
+}
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Services
 
-## Learn More
+```typescript
+services: [
+  {
+    title: "Service Title",
+    description: "Service description",
+    price: "Price",
+    features: [
+      "Feature 1",
+      "Feature 2",
+      // ... more features
+    ],
+  },
+  // ... more services
+]
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Testimonials
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```typescript
+testimonials: [
+  {
+    name: "Client Name",
+    role: "Client Role",
+    content: "Testimonial content",
+    image: "/images/testimonial-1.jpg",
+  },
+  // ... more testimonials
+]
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### FAQ
 
-## Deploy on Vercel
+```typescript
+faq: [
+  {
+    question: "FAQ Question",
+    answer: "FAQ Answer",
+  },
+  // ... more FAQs
+]
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Images
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Place your images in the `public/images` directory:
+- Coach photo: `public/images/coach.jpg`
+- Testimonial photos: `public/images/testimonial-1.jpg`, `testimonial-2.jpg`, etc.
+- OG image: `public/images/og-image.jpg`
+
+## SEO Optimization
+
+The site is already optimized for SEO with:
+- Proper meta tags
+- Open Graph images
+- Twitter cards
+- Semantic HTML structure
+- Responsive images
+- Fast loading times
+
+## Deployment
+
+The site can be deployed to any platform that supports Next.js, such as:
+- Vercel
+- Netlify
+- AWS
+- Google Cloud Platform
+
+## License
+
+MIT License - feel free to use this template for your own projects!
