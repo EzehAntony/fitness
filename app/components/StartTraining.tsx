@@ -25,7 +25,7 @@ export default function StartTraining() {
     e.preventDefault();
     // Here you would typically send the form data to your backend
     console.log('Form submitted:', formData);
-    alert('Thank you for your interest! We will contact you soon to discuss your subscription.');
+    alert('Thank you for your interest! We will contact you soon to discuss your fitness journey.');
   };
 
   return (
@@ -36,7 +36,7 @@ export default function StartTraining() {
             Contact Us to Get Started
           </h2>
           <p className="text-gray-300 text-center max-w-2xl mx-auto mb-12">
-            Choose your preferred subscription type and we'll get back to you within 24 hours to discuss the details.
+            Ready to transform your life? Choose your preferred subscription type and we&apos;ll help you get started on your fitness journey.
           </p>
           
           <div className="bg-gray-900 rounded-lg shadow-xl p-8">
@@ -73,24 +73,23 @@ export default function StartTraining() {
                     placeholder="john@example.com"
                   />
                 </div>
-              </div>
-              
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-white"
-                  placeholder="(555) 123-4567"
-                />
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-white"
+                    placeholder="(123) 456-7890"
+                  />
+                </div>
+                
                 <div>
                   <label htmlFor="subscriptionType" className="block text-sm font-medium text-gray-300 mb-2">
                     Subscription Type
@@ -141,14 +140,14 @@ export default function StartTraining() {
                   onChange={handleChange}
                   rows={4}
                   className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-white"
-                  placeholder="Tell us about your fitness goals, any specific requirements, or questions you have about our services."
+                  placeholder="Tell us about your fitness goals or any specific requirements..."
                 ></textarea>
               </div>
               
               <div className="text-center">
                 <button
                   type="submit"
-                  className="bg-red-600 hover:bg-red-700 cursor-pointer text-white px-8 py-3 rounded-full font-semibold text-lg transition-transform duration-300 hover:scale-105 tracking-wide"
+                  className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-semibold text-lg transition-transform duration-300 hover:scale-105 tracking-wide"
                 >
                   Contact Us
                 </button>
