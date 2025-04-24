@@ -56,6 +56,7 @@ export default function Gallery() {
                 <Image
                   src={image.src}
                   alt={image.alt}
+                  quality={90}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />

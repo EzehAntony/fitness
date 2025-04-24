@@ -11,8 +11,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "MYGOALFITNESS",
-  description: "Jamie Cole - fitness coach",
+  title: "MyGoalFitness",
+  description: "fitness coach",
 };
 
 export default function RootLayout({
