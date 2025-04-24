@@ -21,7 +21,8 @@ export default function Hero() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0 brightness-75"
       >
-        <source src="/videos/gym-grit.webm" type="video/webm" />
+        <source src="/videos/gym-grit.webm" type="video/webm" media="(min-width: 768px)" />
+        <source src="/videos/gym-mobile.webm" type="video/webm" media="(max-width: 767px)" />
       </video>
 
       {/* Dark Overlay */}
