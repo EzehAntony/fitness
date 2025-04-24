@@ -22,6 +22,7 @@ export default function Services() {
                   src={service.image}
                   alt={service.title}
                   fill
+                  quality={60}
                   className="object-cover"
                 />
               </div>

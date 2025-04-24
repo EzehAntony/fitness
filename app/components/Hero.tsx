@@ -19,7 +19,9 @@ export default function Hero() {
         loop
         muted
         playsInline
+        preload="auto"
         className="absolute inset-0 w-full h-full object-cover z-0 brightness-75"
+        poster="/images/video-poster.jpg"
       >
         <source src="/videos/gym-grit.webm" type="video/webm" media="(min-width: 768px)" />
         <source src="/videos/gym-mobile.webm" type="video/webm" media="(max-width: 767px)" />
