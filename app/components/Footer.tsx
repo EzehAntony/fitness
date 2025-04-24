@@ -2,11 +2,11 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { siteContent } from '../data/siteContent';
+
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="bg-black text-white pt-16 pb-8">
       <div className="container mx-auto px-6">
@@ -27,7 +27,7 @@ export default function Footer() {
               <h2 className="text-2xl font-bold">MYGOALFITNESS</h2>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              Transform your body and mind with our expert trainers and state-of-the-art facilities. 
+              Transform your body and mind with our expert trainers and state-of-the-art facilities.
               Join our community and start your fitness journey today.
             </p>
             <div className="flex space-x-4">
@@ -53,7 +53,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          
+
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
@@ -85,7 +85,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          
+
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
@@ -118,7 +118,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        
+
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
