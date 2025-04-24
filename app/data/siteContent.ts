@@ -1,5 +1,7 @@
+import { SiteContent } from '../types/siteContent';
+
 // Site-wide content data
-export const siteContent = {
+export const siteContent: SiteContent = {
   // Hero section content
   hero: {
     name: "MYGOALFITNESS",
@@ -50,7 +52,7 @@ export const siteContent = {
   // Gallery section content
   gallery: {
     title: "Fitness Gallery",
-    description: "Check out some of our training sessions, workouts, and success stories.",
+    description: "Check out our training sessions, workouts, and success stories",
     images: [
       {
         id: 1,
@@ -87,6 +89,36 @@ export const siteContent = {
         src: '/images/image-6.jpg',
         alt: 'gym',
         category: 'equipments'
+      }
+    ]
+  },
+  reviews: {
+    title: "What Our Clients Say",
+    description: "Real stories from people who transformed their lives with us",
+    testimonials: [
+      {
+        id: 1,
+        name: "Sarah Johnson",
+        role: "Fitness Enthusiast",
+        image: "/images/reviews/sarah.jpg",
+        quote: "The personalized training program completely transformed my approach to fitness. I've never felt better!",
+        rating: 5
+      },
+      {
+        id: 2,
+        name: "Mike Thompson",
+        role: "Business Professional",
+        image: "/images/reviews/mike.jpg",
+        quote: "Flexible scheduling and expert trainers made it possible to maintain my fitness routine despite my busy schedule.",
+        rating: 5
+      },
+      {
+        id: 3,
+        name: "Emma Davis",
+        role: "Yoga Instructor",
+        image: "/images/reviews/emma.jpg",
+        quote: "The nutrition guidance combined with strength training helped me achieve my fitness goals faster than ever.",
+        rating: 5
       }
     ]
   },
