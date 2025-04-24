@@ -40,9 +40,9 @@ export default function Reviews() {
                   key={testimonial.id}
                   className="w-full flex-shrink-0 px-4"
                 >
-                  <div className="bg-gray-800 rounded-2xl p-8 shadow-xl">
-                    <div className="flex items-center mb-6">
-                      <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4">
+                  <div className="bg-gray-800 rounded-2xl p-4 sm:p-8 shadow-xl">
+                    <div className="flex flex-col sm:flex-row items-center mb-4 sm:mb-6">
+                      <div className="relative w-16 h-16 rounded-full overflow-hidden mb-3 sm:mb-0 sm:mr-4">
                         <Image
                           src={testimonial.image}
                           alt={testimonial.name}
@@ -50,13 +50,13 @@ export default function Reviews() {
                           className="object-cover"
                         />
                       </div>
-                      <div>
+                      <div className="text-center sm:text-left">
                         <h3 className="text-white font-semibold text-lg">{testimonial.name}</h3>
                         <p className="text-gray-400">{testimonial.role}</p>
                       </div>
                     </div>
-                    <p className="text-gray-300 text-lg italic mb-4">&quot;{testimonial.quote}&quot;</p>
-                    <div className="flex text-yellow-400">
+                    <p className="text-gray-300 text-base sm:text-lg italic mb-4">&quot;{testimonial.quote}&quot;</p>
+                    <div className="flex justify-center sm:justify-start text-yellow-400">
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <svg
                           key={i}
@@ -77,7 +77,7 @@ export default function Reviews() {
           {/* Navigation Buttons */}
           <button
             onClick={prevTestimonial}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-red-600 text-white p-2 rounded-full hover:bg-red-700 transition-colors"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-12 bg-red-600 text-white p-2 rounded-full hover:bg-red-700 transition-colors"
             aria-label="Previous testimonial"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,7 +86,7 @@ export default function Reviews() {
           </button>
           <button
             onClick={nextTestimonial}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-red-600 text-white p-2 rounded-full hover:bg-red-700 transition-colors"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-12 bg-red-600 text-white p-2 rounded-full hover:bg-red-700 transition-colors"
             aria-label="Next testimonial"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
