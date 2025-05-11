@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Hydration from "./components/Hydration";
 import Header from "./components/Header";
+import siteContent from "./data/siteContent";
 
 const roboto = Roboto({
   weight: ['400', '500', '700', '900'],
@@ -11,8 +12,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "MyGoalFitness",
-  description: "fitness coach",
+  title: siteContent.general.title,
+  description: `Professional Fitness Training and Wellness Coaching by ${siteContent.general.title}`,
 };
 
 export default function RootLayout({

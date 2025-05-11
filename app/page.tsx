@@ -3,6 +3,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Gallery from "./components/Gallery";
 import Reviews from "./components/Reviews";
+import SuccessStory from "./components/SuccessStory";
 import StartTraining from "./components/StartTraining";
 import Footer from "./components/Footer";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Gallery />
       <Reviews />
+      <SuccessStory />
       <StartTraining />
       <Footer />
     </main>

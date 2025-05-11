@@ -14,6 +14,12 @@ export interface Reviews {
 }
 
 export interface SiteContent {
+  general: {
+    title: string;
+    tagline: string;
+    logo: string;
+    logoAlt: string;
+  };  
   hero: {
     name: string;
     title: string;
@@ -28,6 +34,7 @@ export interface SiteContent {
     content: string;
     approach: string;
     experience: string;
+    image: string;
   };
   services: {
     title: string;
@@ -48,11 +55,21 @@ export interface SiteContent {
     }>;
   };
   reviews: Reviews;
+  successStory: {
+    title: string;
+    description: string;
+    name: string;
+    role: string;
+    image: string;
+    story: string;
+    results: string[];
+  };
   contact: {
     title: string;
     description: string;
     email: string;
     phone: string;
+    address: string;
     socialMedia: {
       instagram: string;
       facebook: string;
