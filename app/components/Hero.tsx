@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/60 z-10" />
 
       {/* Content */}
-      <div className="container mx-auto px-4 py-12 md:py-20 relative z-10">
+      <div className="container mx-auto px-4 py-12 md:py-20 md:pb-10 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className={`text-center lg:text-left transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
@@ -62,9 +62,9 @@ export default function Hero() {
           </div>
 
           {/* Stats Cards */}
-          <div className={`relative transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          <div className={`relative transition-all duration-1000 delay-300 md:pb-10 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}>
-            <div className="bg-brand-800/80 backdrop-blur-md rounded-xl p-4 md:p-8 shadow-xl border border-white/20 min-h-[400px] md:min-h-[450px] flex flex-col justify-center">
+            <div className="bg-brand-800/80 backdrop-blur-md md:pb-10 rounded-xl p-4 md:p-8 shadow-xl border border-white/20 min-h-[400px] md:min-h-[450px] flex flex-col justify-center">
               <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 text-center">Why Choose Us</h3>
 
               <div className="space-y-3 md:space-y-6">
@@ -106,22 +106,8 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Stats Cards */}
-            <div className="absolute -bottom-6 -left-6 bg-red-600 p-3 md:p-4 rounded-lg shadow-lg">
-              <div className="flex items-center space-x-2 md:space-x-3">
-                <div className="bg-white p-1.5 md:p-2 rounded-full">
-                  <svg className="w-4 h-4 md:w-6 md:h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-xl md:text-2xl font-bold text-white z-20">500+</p>
-                  <p className="text-xs md:text-sm text-white/80">Happy Clients</p>
-                </div>
-              </div>
-            </div>
 
-            <div className="absolute -top-6 -right-6 bg-red-600 p-3 md:p-4 rounded-lg shadow-lg">
+            <div className="absolute -top-6 -right-6 bg-red-600 p-3 md:p-4 rounded-lg shadow-lg z-20">
               <div className="flex items-center space-x-2 md:space-x-3">
                 <div className="bg-white p-1.5 md:p-2 rounded-full">
                   <svg className="w-4 h-4 md:w-6 md:h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

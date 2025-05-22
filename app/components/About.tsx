@@ -46,7 +46,7 @@ export default function About() {
           {/* Image */}
           <div className={`relative transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
             }`}>
-            <div className="relative w-full h-[600px] rounded-lg overflow-hidden shadow-xl">
+            <div className="relative w-full h-[600px] md:h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
                 src={siteContent.about.image}
                 alt="About Harsimran Fitness Inc"
