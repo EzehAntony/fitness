@@ -33,7 +33,6 @@ export default function LearnMore() {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-3xl font-bold mb-6">Our Approach</h2>
