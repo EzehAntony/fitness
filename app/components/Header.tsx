@@ -28,9 +28,11 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 py-4  z-50 transition-all duration-300`}
+      className={`fixed top-0 left-0 right-0 py-4 z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-gray-900 shadow-lg' : 'bg-transparent'
+      }`}
     >
-      <div className="container mx-auto px-4 py-6">
+      <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
@@ -43,8 +45,7 @@ export default function Header() {
                 priority
               />
             </div>
-            <span className={`text-xl font-bold ${isScrolled ? 'text-brand-900 dark:text-white' : 'text-white'
-              }`}>
+            <span className="text-xl font-bold text-white">
               {siteContent.general.title}
             </span>
           </Link>
@@ -53,36 +54,31 @@ export default function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               href="#about"
-              className={`font-medium transition-colors ${isScrolled ? 'text-brand-900 hover:text-red-600 dark:text-white dark:hover:text-red-500' : 'text-white hover:text-red-500'
-                }`}
+              className="font-medium text-white hover:text-red-500 transition-colors"
             >
               About
             </Link>
             <Link
               href="#services"
-              className={`font-medium transition-colors ${isScrolled ? 'text-brand-900 hover:text-red-600 dark:text-white dark:hover:text-red-500' : 'text-white hover:text-red-500'
-                }`}
+              className="font-medium text-white hover:text-red-500 transition-colors"
             >
               Services
             </Link>
             <Link
               href="#gallery"
-              className={`font-medium transition-colors ${isScrolled ? 'text-brand-900 hover:text-red-600 dark:text-white dark:hover:text-red-500' : 'text-white hover:text-red-500'
-                }`}
+              className="font-medium text-white hover:text-red-500 transition-colors"
             >
               Gallery
             </Link>
             <Link
               href="#testimonials"
-              className={`font-medium transition-colors ${isScrolled ? 'text-brand-900 hover:text-red-600 dark:text-white dark:hover:text-red-500' : 'text-white hover:text-red-500'
-                }`}
+              className="font-medium text-white hover:text-red-500 transition-colors"
             >
               Testimonials
             </Link>
             <Link
               href="#contact"
-              className={`font-medium transition-colors ${isScrolled ? 'text-brand-900 hover:text-red-600 dark:text-white dark:hover:text-red-500' : 'text-white hover:text-red-500'
-                }`}
+              className="font-medium text-white hover:text-red-500 transition-colors"
             >
               Contact
             </Link>
@@ -126,39 +122,39 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+          <div className="md:hidden mt-4 py-4 bg-gray-900 rounded-lg shadow-lg">
             <nav className="flex flex-col space-y-4 px-4">
               <Link
                 href="#about"
-                className="font-medium text-brand-900 dark:text-white hover:text-red-600 dark:hover:text-red-500"
+                className="font-medium text-white hover:text-red-500"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="#services"
-                className="font-medium text-brand-900 dark:text-white hover:text-red-600 dark:hover:text-red-500"
+                className="font-medium text-white hover:text-red-500"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Services
               </Link>
               <Link
                 href="#gallery"
-                className="font-medium text-brand-900 dark:text-white hover:text-red-600 dark:hover:text-red-500"
+                className="font-medium text-white hover:text-red-500"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Gallery
               </Link>
               <Link
                 href="#testimonials"
-                className="font-medium text-brand-900 dark:text-white hover:text-red-600 dark:hover:text-red-500"
+                className="font-medium text-white hover:text-red-500"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Testimonials
               </Link>
               <Link
                 href="#contact"
-                className="font-medium text-brand-900 dark:text-white hover:text-red-600 dark:hover:text-red-500"
+                className="font-medium text-white hover:text-red-500"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact

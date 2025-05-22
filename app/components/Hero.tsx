@@ -34,9 +34,8 @@ export default function Hero() {
       <div className="container mx-auto px-4 py-12 md:py-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className={`text-center lg:text-left transition-all duration-1000 delay-200 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}>
+          <div className={`text-center lg:text-left transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-4">
               {siteContent.hero.name}
             </h1>
@@ -63,12 +62,11 @@ export default function Hero() {
           </div>
 
           {/* Stats Cards */}
-          <div className={`relative transition-all duration-1000 delay-300 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}>
+          <div className={`relative transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}>
             <div className="bg-brand-800/80 backdrop-blur-md rounded-xl p-4 md:p-8 shadow-xl border border-white/20 min-h-[400px] md:min-h-[450px] flex flex-col justify-center">
               <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 text-center">Why Choose Us</h3>
-              
+
               <div className="space-y-3 md:space-y-6">
                 <div className="flex items-start bg-brand-700/50 p-3 rounded-lg">
                   <div className="bg-red-600 p-1.5 md:p-2 rounded-full mr-3 md:mr-4 mt-1">
@@ -81,7 +79,7 @@ export default function Hero() {
                     <p className="text-brand-200 text-sm md:text-base">Certified professionals with years of experience</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start bg-brand-700/50 p-3 rounded-lg">
                   <div className="bg-red-600 p-1.5 md:p-2 rounded-full mr-3 md:mr-4 mt-1">
                     <svg className="w-4 h-4 md:w-5 md:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,7 +91,7 @@ export default function Hero() {
                     <p className="text-brand-200 text-sm md:text-base">Customized programs tailored to your goals</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start bg-brand-700/50 p-3 rounded-lg">
                   <div className="bg-red-600 p-1.5 md:p-2 rounded-full mr-3 md:mr-4 mt-1">
                     <svg className="w-4 h-4 md:w-5 md:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,10 +114,10 @@ export default function Hero() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <div>
+                {/*              <div>
                   <p className="text-xl md:text-2xl font-bold text-white z-20">500+</p>
                   <p className="text-xs md:text-sm text-white/80">Happy Clients</p>
-                </div>
+                </div> */}
               </div>
             </div>
 
