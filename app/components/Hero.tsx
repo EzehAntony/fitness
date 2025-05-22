@@ -12,7 +12,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-brand-950 to-brand-900 pt-24 md:pt-0">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-brand-950 to-brand-900 pt-24 md:pt-0 md:pb-10">
       {/* Video Background */}
       <video
         autoPlay
@@ -114,10 +114,10 @@ export default function Hero() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                {/*              <div>
+                <div>
                   <p className="text-xl md:text-2xl font-bold text-white z-20">500+</p>
                   <p className="text-xs md:text-sm text-white/80">Happy Clients</p>
-                </div> */}
+                </div>
               </div>
             </div>
 
