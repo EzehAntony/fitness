@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function LearnMore() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-900">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div className="container mx-auto px-4">
@@ -35,11 +35,11 @@ export default function LearnMore() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="text-3xl font-bold mb-6">Our Approach</h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-6">
+              <h2 className="text-3xl font-bold mb-6 text-white">Our Approach</h2>
+              <p className="text-gray-300 mb-6">
                 At TruBe, we believe in a holistic approach to fitness and wellness. Our expert coaches are dedicated to helping you achieve your health goals through personalized training programs, nutrition guidance, and lifestyle coaching.
               </p>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-300">
                 We combine evidence-based training methods with personalized attention to ensure you get the best results. Our focus is on sustainable progress and long-term success.
               </p>
             </motion.div>
@@ -84,11 +84,11 @@ export default function LearnMore() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg"
+                className="bg-gray-800 p-6 rounded-lg shadow-lg"
               >
                 <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300">{feature.description}</p>
+                <h3 className="text-xl font-bold mb-2 text-white">{feature.title}</h3>
+                <p className="text-gray-300">{feature.description}</p>
               </motion.div>
             ))}
           </div>
