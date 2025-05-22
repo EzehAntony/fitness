@@ -117,7 +117,7 @@ export default function Hero() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xl md:text-2xl font-bold text-white">500+</p>
+                  <p className="text-xl md:text-2xl font-bold text-white z-20">500+</p>
                   <p className="text-xs md:text-sm text-white/80">Happy Clients</p>
                 </div>
               </div>
